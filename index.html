@@ -45,6 +45,9 @@
     display: none;
   }
   
+  strong {
+    color: black;
+  }
   
   
   .individual {
@@ -92,7 +95,7 @@
 		background: rgb(151, 186, 180);
     color: white;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     padding: 20px;
     display: none;
   }
@@ -152,9 +155,39 @@
       materials
     </div>
   
-  	<div class="institutions">
-      institutions
-    </div>
+	<div class="institutions">
+      <p>
+        The power corporations have over institutions is maintained further once we go online. 
+        Yet it is important that we define what these online institutions are. 
+        Based on the research we did, we believe the best description of online institutions are
+        <strong>1)</strong> Online institutions and the stems that control the internet.
+        This means the laws that control the internet and the physical infrastructure that is inplace to run the internet.
+        And <strong>2)</strong>governmental institutions that may rely on the internet to function.
+        Think of the use of <a href="https://www.brookings.edu/research/understanding-risk-assessment-instruments-in-criminal-justice/#:~:text=Algorithmic%20tools%20are%20in%20widespread,is%20most%20likely%20to%20occur.">algorithms within the justice system</a>.
+      </p>
+    
+      <p>
+        
+        Now that we have a clear understanding of what institutions look like online, It might become apparent how corporations can abuse their power.
+        Some of the most apparent ideas we came up with were:
+        <ul>
+          <li><a href="https://arstechnica.com/tech-policy/2021/07/isps-spent-235-million-on-lobbying-and-donations-more-than-320000-a-day/">Lobbying to maintain favorable conditions</a></li>
+          <li>Framing Damages as merely the Cost of Operation</li>
+          <li><a href="https://www.jsonline.com/in-depth/news/2021/07/14/weve-spent-billions-provide-broadband-rural-areas-what-failed-wisconsin/7145014002/">Privatization of Government contracts</a></li>
+          <li>Use of algorithms in institutions (justice system, foster care)</li>
+      </ul>
+    </p>
+  
+    <p>
+				While these may already seem bad from a birds eye view,
+				we believe that each of these also violate one of the rights either found in the UDHR(Universal Declaration of Human Rights)  or in the proposed in the EDDR (European Declaration of Digital Rights).
+				For example, privatization of government contracts  may impede on the
+				<u>Right to Free-Will</u>,by not allowing users to choose their providers or services to the fullest extent.
+				Or the non-protection against algorithmic biases infringes on an individual’s 
+				<u>Right to Non-Discrimination</u>, as seen in our section about the online Individual.
+		</p>
+  
+  </div>
   
      <div class="knowledge">
       knowledge
@@ -204,8 +237,8 @@
       let t = document.getElementsByClassName(item.dataset.info)
       for (let i = 0; i < t.length; i++) 
       {
-  				let texts = t[i].innerText;	
-          infoElement.textContent = texts;
+  				let texts = t[i].innerHTML;	
+          infoElement.innerHTML = texts;
 			}
       
       popUp.style.display = 'flex'
