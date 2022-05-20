@@ -1,13 +1,15 @@
 <style>
   body {
-    background-color: var(--color-one);
+    background-color: var(--color-one)
   }
   
 /*  custom colors so we can maintain them throughout/ change easy  */
   :root{
-    --color-one: rgb(213, 228, 230);
-    --color-two: rgb(201, 182, 204);
-    --color-three: rgb(105, 73, 60)
+    --color-one: #C6CDC7;
+    --color-two: #753742;
+    --color-three: #003459;
+    --color-four: #00171F;
+    --color-five: #BC8DA0;
   }
 
 /*   .logo {
@@ -24,7 +26,7 @@
     font-family: serif;
     
     padding-bottom: 10px;
-		border-bottom: 3px solid var(--color-three);
+		border-bottom: 4px solid var(--color-three);
     text-align: center;
     font-size: 52px;
   }
@@ -41,9 +43,6 @@
   
    * { box-sizing: border-box; }
   
-  individual { 
-    display: none;
-  }
   
   strong {
     color: black;
@@ -66,10 +65,38 @@
     display: none;
   }
   
+  .definition{
+    font-size: 32px;
+    margin-left: 2%;
+  }
+  
+  .definition2{
+    font-size: 28px;
+    margin-left: 2%
+  }
+  
+  .defText{
+    margin-right: 10%;
+  }
+  
+  .grid2 {
+    width: 100%;
+    vertical-align: text-top;
+    background: var(--color-five);
+    border-radius: 15px;
+    border: 2px solid var(--color-four);
+    margin: 20 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+  }
+  
   .grid {
     width: 100%;
     background: var(--color-two);
     border-radius: 15px;
+    border: 2px solid var(--color-four);
     margin: 0 auto;
     position: relative;
     display: grid;
@@ -82,6 +109,7 @@
     font-size: 32px;
   	display: flex;
   	justify-content: center;
+    color: white;
 
   }
   
@@ -93,10 +121,12 @@
   .pop-up {
     position: absolute;
 		background: rgb(151, 186, 180);
+    border-radius: 15px;
+    border: 2px solid var(--color-four);
     color: white;
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding: 15px;
     display: none;
   }
   
@@ -127,21 +157,58 @@
     Introduction
   </h3>
   <p>
-  With an ever growing internet, comes the potential for ever growing corporate overstep into the digital world. Blablaa (insert better introduction here). 
-  Therefore we sought to find a way to manage this relationship and protect the rights of users while giving clear guidelines to corporations to maintain responsibility (idk add snazzy zinger here test).
-  Before we can determine how corporations fit within the digital rights space we have to first set clear definitions for what Power and Corporate Power are. 
+    In our current moment, we find the line between the “real” and digital world becoming increasingly blurry. 
+    More and more, real, tangible societal outcomes are determined by digital parameters, with little consideration for potential repercussions. 
+    The increasing interdependence between the “real” and digital world implies a need to fundamentally question how we conceptualize the structure of our communities and institutions. 
+    Throughout history, when we have similarly found ourselves in the midst of this sort of paradigm shift, we return to human rights to anchor our commonly held beliefs. 
+    It is for this reason that we must necessarily consider the implications of the digital world on our human rights, at the risk of exploiting the most vulnerable members of our community. 
+  </p>
+ <p>
+   As digital parameters become increasingly important in determining real societal outcomes, it is paramount that we question who and what controls those digital parameters and how that control impacts our human rights.
+   In this document, we seek to manage this relationship, protecting the rights of users while also considering how responsible corporations can implement and support those rights.
+   But before we can determine how corporations fit within the digital rights space, we must first generally understand how both power and corporate power is generally produced. 
   </p>
   
   <h3>
     What Is Corporate Power?
   </h3>
   <p>
-    As we believe that digital rights spawn from the fundamental rights written within the UDHR, we believe that the best basis for our work would be one that focuses on corporate power within this offline space. 
-    Thus we chose (insert his first name) Birchall’s 2011 (Check this) Corporate responsibility framework(double check naming convention) as the foundation to our work. 
-    In his framework, Birchall states that the definition of power is “The production, in and through social relations, of effects that shape the capacities of actors to determine their circumstances and fate”. 
-    (insert some analysis or extra sentences here). He continues his definition of Corporate Power as follows: “The production, by business enterprises, in and through social relations, of effects that shape the capacities of individuals to enjoy their human rights.” 
-    We can take from this that Corporate Power boils down to how corporations influence and control human rights. (insert some analysis). We have thus taken the framework described by Birchall and have separated it into the following 4 sections.
+    To systematically consider the role of corporate power in the digital sphere,
+    we employ David Birchall’s framework for characterizing corporate power over human rights (2011). 
+    In his analytical framework, Birchall begins by defining power, using the language of Michael Barnett and Raymond Duvall:
+  <div class="grid2">
+  	<h3 class="definition">
+    <strong>Power is...</strong>
+    </h3>
+  	<p class="defText">
+      <u>“The production, in and through social relations, of effects that shape the capacities of actors to determine their circumstances and fate”</u>
+      -Barnett and Duvall, <i>Power in International Politics</i>
+    </p>  
+       
+  </div>
   </p>
+<p>
+  From this, Birchall derives his definition of Corporate Power as follows: 
+  <div class="grid2">
+  	<h3 class="definition2">
+    <strong>Corporate Power is...</strong>
+    </h3>
+  	<p class="defText">
+      <u>“The production, by business enterprises, in and through social relations, of effects that shape the capacities of individuals to enjoy their human rights.” </u>
+      -Barnett and Duvall, <i>Power in International Politics</i>
+    </p>       
+  </div>
+</p>
+
+<p>
+  From this definition of corporate power, Birchall identifies 4 areas in which this corporate power is specifically produced:
+<strong>the power over individuals, the power over materialities, the power over institutions, and the power over knowledge. 
+</strong>
+</p>
+
+<p>
+  While Birchall’s framework refers to the human rights that are already established in the “real world,” we use Birchall’s framework to consider how these categories and their implied transgressions on human rights shift and transform when transposed onto a digital context. 
+</p>
   
 <!--  information for our expansion settings  -->
 <!--  each of these divs can old their own information and should
@@ -230,6 +297,7 @@
   const closeButton = document.querySelector('.close')
   const infoElement = document.querySelector('.info')
   const gridItems = document.querySelectorAll('.grid > div')
+  const grid = document.querySelector('.grid')
   // const indiv = $( "div:contains('Individual')" ).attr("class");
 
   gridItems.forEach(item => {
@@ -240,12 +308,13 @@
   				let texts = t[i].innerHTML;	
           infoElement.innerHTML = texts;
 			}
-      
+      grid.style.border = 'none'
       popUp.style.display = 'flex'
     })
   })
   
   closeButton.addEventListener('click', () => {
     popUp.style.display = 'none'
+    grid.style.border = '2px solid var(--color-four)'
   })
 </script>
